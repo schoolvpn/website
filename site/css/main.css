@@ -293,7 +293,7 @@ input.input100 {
 [ L-Text >= 26 ]*/
 .l1-txt1 {
   font-family: Montserrat-Black;
-  font-size: 50px;
+  font-size: 70px;
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
@@ -301,7 +301,7 @@ input.input100 {
 
 .l1-txt2 {
   font-family: Montserrat-Light;
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
   line-height: 1.2;
 }
@@ -490,7 +490,8 @@ h6 {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  font-size: 16px
+  font-size: 20px;
+  margin: 10px
 }
 
 .how-btn::before {
