@@ -275,11 +275,10 @@ input.input100 {
 /*//////////////////////////////////////////////////////////////////
 [ M-Text 16 - 25 ]*/
 .m1-txt1 {
-  font-family: Montserrat-Black;
+  font-family: Montserrat-Bold;
   font-size: 24px;
-  color: #333;
+  color: white;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
 .m1-txt2 {
@@ -484,13 +483,14 @@ h6 {
 
 /*---------------------------------------------*/
 .how-btn {
-  padding: 10px 20px;
+  padding: 0px;
   background-color: transparent;
   border-radius: 25px;
   border: 2px solid #fff;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  font-size: 16px
 }
 
 .how-btn::before {
@@ -520,14 +520,15 @@ h6 {
 
 /*---------------------------------------------*/
 .how-btn1 {
-  background-color: #3a5dff;
+  background-color: transparent;
   border-radius: 25px;
   padding: 0 20px;
+  border: 2px solid #fff;
 }
 
 .how-btn1:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: white;
+  color: red;
 }
 
 /*---------------------------------------------*/
