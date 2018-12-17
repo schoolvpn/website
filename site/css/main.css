@@ -23,6 +23,11 @@
   height: 100px;
 }
 
+.t_link {
+  color: white;
+  text-decoration: underline
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -387,6 +392,8 @@ html {
   animation: Gradient 15s ease infinite;
   overflow-x: hidden;
 }
+
+
 
 @-webkit-keyframes Gradient {
 	0% {
