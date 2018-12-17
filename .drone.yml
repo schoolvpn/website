@@ -1,0 +1,6 @@
+pipeline:
+  publish_server:
+    image: plugins/docker
+    repo: schvpn/website
+    secrets: [ docker_username, docker_password ]
+    tag: [ latest ]
