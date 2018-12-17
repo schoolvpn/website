@@ -28,6 +28,11 @@
   text-decoration: underline
 }
 
+.t_link:hover {
+  color: white;
+  text-decoration: underline
+}
+
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
