@@ -1,27 +1,16 @@
-kind: pipeline
-name: default
-
-steps:
-- name: build-dev  
-  image: plugins/docker
-  settings:
+pipeline:
+  build-dev:
+    image: plugins/docker
     repo: schvpn/website
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
-    tag: dev
-  when:
+    secrets: [ docker_username, docker_password ]
+    tag: [ dev ]
+    when:
       branch: dev
 
-- name: build-prod  
-  image: plugins/docker
-  settings:
+  build-prod:
+    image: plugins/docker
     repo: schvpn/website
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
-    tag: latest
-  when:
+    secrets: [ docker_username, docker_password ]
+    tag: [ master ]
+    when:
       branch: master
