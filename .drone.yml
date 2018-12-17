@@ -1,6 +1,27 @@
-pipeline:
-  publish_server:
-    image: plugins/docker
+kind: pipeline
+name: default
+
+steps:
+- name: build-dev  
+  image: plugins/docker
+  settings:
     repo: schvpn/website
-    secrets: [ docker_username, docker_password ]
-    tag: [ latest ]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    tag: dev
+  when:
+      branch: dev
+
+- name: build-prod  
+  image: plugins/docker
+  settings:
+    repo: schvpn/website
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    tag: latest
+  when:
+      branch: master
