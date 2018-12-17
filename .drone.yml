@@ -1,6 +1,16 @@
 pipeline:
-  publish_server:
+  build-dev:
     image: plugins/docker
     repo: schvpn/website
     secrets: [ docker_username, docker_password ]
-    tag: [ latest ]
+    tag: [ dev ]
+    when:
+      branch: dev
+
+  build-prod:
+    image: plugins/docker
+    repo: schvpn/website
+    secrets: [ docker_username, docker_password ]
+    tag: [ master ]
+    when:
+      branch: master
