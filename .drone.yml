@@ -14,12 +14,3 @@ pipeline:
     tag: [ master ]
     when:
       branch: master
-
-  rancher:
-    image: peloton/drone-rancher
-    secrets: [ rancher_access_key, rancher_secret_key, rancher_url ]
-    service: schoolvpn/website
-    docker_image: schvpn/website
-    confirm: true
-    when:
-      branch: master
