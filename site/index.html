@@ -17,6 +17,7 @@
 	<!--===============================================================================================-->
 	</head>
 	<body>
+		<noscript><img src='http://analytics.schoolvpn.ca/pixel.png?app_key=1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0&begin_session=1'/></noscript>
 		<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
 			<span>
 			</span>
@@ -137,41 +138,31 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script type='text/javascript'>
-  
-			// Some default pre init
+			//some default pre init
 			var Countly = Countly || {};
 			Countly.q = Countly.q || [];
 			
-			// Provide your app key that you retrieved from Countly dashboard
-			Countly.app_key = "1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0";
+			//provide countly initialization parameters
+			Countly.app_key = '1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0';
+			Countly.url = 'http://analytics.schoolvpn.ca';
 			
-			// Provide your server IP or name. Use try.count.ly or us-try.count.ly 
-			// or asia-try.count.ly for EE trial server.
-			// If you use your own server, make sure you have https enabled if you use
-			// https below.
-			Countly.url = "https://www.schoolvpn.ca"; 
-			
-			// Start pushing function calls to queue
-			// Track sessions automatically (recommended)
 			Countly.q.push(['track_sessions']);
-			  
-			//track web page views automatically (recommended)
 			Countly.q.push(['track_pageview']);
-			  
-			// Uncomment the following line to track web heatmaps (Enterprise Edition)
-			// Countly.q.push(['track_clicks']);
+			Countly.q.push(['track_clicks']);
+			Countly.q.push(['track_scrolls']);
+			Countly.q.push(['track_errors']);
+			Countly.q.push(['track_links']);
+			Countly.q.push(['track_forms']);
+			Countly.q.push(['collect_from_forms']);
 			
-			// Uncomment the following line to track web scrollmaps (Enterprise Edition)
-			// Countly.q.push(['track_scrolls']);
-			  
-			// Load Countly script asynchronously
+			//load countly script asynchronously
 			(function() {
-				var cly = document.createElement('script'); cly.type = 'text/javascript'; 
-				cly.async = true;
-				// Enter url of script here (see below for other option)
-				cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.8.2/countly.min.js';
-				cly.onload = function(){Countly.init()};
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+			   var cly = document.createElement('script'); cly.type = 'text/javascript';
+			   cly.async = true;
+			   //enter url of script here
+			   cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.8.2/countly.min.js';
+			   cly.onload = function(){Countly.init()};
+			   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
 			})();
 			</script>
 	</body>
