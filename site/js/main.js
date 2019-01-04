@@ -3,13 +3,62 @@
     "use strict";
     /*==================================================================
     [ Modal ]*/
-    $('.modal-subscribe').on('click',function(e){
+    $('.modal-download').on('click',function(e){
         e.stopPropagation();
     })
     
     $('.btn-close-modal').on('click', function(){
-        $('#subscribe').modal('hide');
+        $('#download').modal('hide');
     });
+
+    $('.modal-ios').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+    $('.btn-close-modal').on('click', function(){
+        $('#ios').modal('hide');
+    });
+
+    $('.modal-windows').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+    $('.btn-close-modal').on('click', function(){
+        $('#windows').modal('hide');
+    });
+
+    $('.modal-android').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+    $('.btn-close-modal').on('click', function(){
+        $('#android').modal('hide');
+    });
+
+    $('.modal-chrome').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+    $('.btn-close-modal').on('click', function(){
+        $('#chrome').modal('hide');
+    });
+
+    $('.modal-firefox').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+    $('.btn-close-modal').on('click', function(){
+        $('#firefox').modal('hide');
+    });
+
+    $('.modal-opera').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+    $('.btn-close-modal').on('click', function(){
+        $('#opera').modal('hide');
+    });
+    
 
 })(jQuery);
 
@@ -37,10 +86,10 @@ new TypeIt('#maintitle',{
 function openNav() {
     document.getElementById("mySidenav").style.width = "300px";
     document.getElementById("main").style.marginLeft = "300px";
-  }
-  
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-  function closeNav() {
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
-  }
+}

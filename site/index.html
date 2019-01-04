@@ -17,9 +17,7 @@
 	<!--===============================================================================================-->
 		<link rel="stylesheet" type="text/css" href="css/util.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--===============================================================================================-->
-		<link rel="stylesheet" href="vendor/canvi/canvi.js">
-		
+	<!--===============================================================================================-->		
 	</head>
 	<body>
 		<div id="mySidenav" class="sidenav">
@@ -41,11 +39,11 @@
 				Donations
 			</a>
 			<a class="navitem" href="https://analytics.schoolvpn.ca/login">
-				<i class="fas fa-chart-area"></i>
+				<i class="fas fa-chart-area" style="padding: 5px"></i>
 				Analytics
 			</a>  
-			<a class="navitem" href="#">
-				<i class="fas fa-toolbox"></i>
+			<a class="navitem" href="#2">
+				<i class="fas fa-toolbox" style="padding: 5px"></i>
 				Admin
 			</a>
 		</div>
@@ -63,64 +61,64 @@
 						<h3 id="maintitle" class="l1-txt1 txt-center p-b-10"></h3>
 						<br>
 						<p class="txt-center l1-txt2 p-b-60">
-							Get Internet <a class="t_link" href="https://www.eff.org/pages/say-no-to-online-censorship">Freedom</a> At School Today! 
+							Get Internet <a data-tippy="<p class='s1-txt3b'>www.eff.org</p>" data-tippy-placement="top" class="t_link" href="https://www.eff.org/pages/say-no-to-online-censorship">Freedom</a> At School Today! 
 							<br>
 							Click the download button down below. 
 						</p>
 						<div data-target="#subscribe">
 							<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Darwin_Latest.mobileconfig" style="display:inline-block;">
-								<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+								<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#download" type="submit"> 
 									IOS & MAC
 									<i class="fab fa-apple" style="font-size: 29px; padding: 5px"></i>
 								</button>
-								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+								<p class="s1-txt3 txt-center t_link" data-toggle="modal" data-target="#ios">
 									How To Install
 								</p>
 							</form>
 							<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Client_Latest.exe" style="display:inline-block;">
-								<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+								<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#download" type="submit"> 
 									Windows
 									<i class="fab fa-windows" style="font-size: 29px; padding: 5px"></i>
 								</button>
-								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+								<p class="s1-txt3 txt-center t_link" data-toggle="modal" data-target="#windows">
 									How To Install
 								</p>
 							</form>
 							<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Android_Latest.apk" style="display:inline-block;">
-								<button data-tippy="<p class='s1-txt3b'>Version 1.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+								<button data-tippy="<p class='s1-txt3b'>Version 1.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#download" type="submit"> 
 									Android
 									<i class="fab fa-android" style="font-size: 29px; padding: 5px"></i>
 								</button>
-								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+								<p class="s1-txt3 txt-center t_link" data-toggle="modal" data-target="#android">
 									How To Install
 								</p>
 							</form>
 						</div>
 						<div>
 							<form method="get" action="https://chrome.google.com/webstore/detail/schoolvpn-extension/kjomegdlibofnncipfmbobbljmagfnon" style="display:inline-block;">
-								<button data-tippy="<p class='s1-txt3b'>Version 1.0.1</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+								<button data-tippy="<p class='s1-txt3b'>Version 1.0.1</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#download" type="submit"> 
 									Chrome
 									<i class="fab fa-chrome" style="font-size: 29px; padding: 5px"></i>
 								</button>
-								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+								<p class="s1-txt3 txt-center t_link" data-toggle="modal" data-target="#chrome">
 									How To Install
 								</p>
 							</form>
 							<form method="get" action="" style="display:inline-block;">
-								<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+								<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#download" type="submit"> 
 									Firefox
 									<i class="fab fa-firefox" style="font-size: 29px; padding: 5px"></i>
 								</button>
-								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+								<p class="s1-txt3 txt-center t_link" data-toggle="modal" data-target="#firefox">
 									How To Install
 								</p>
 							</form>
 							<form method="get" action="" style="display:inline-block;">
-								<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+								<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#download" type="submit"> 
 									Opera
 									<i class="fab fa-opera" style="font-size: 29px; padding: 5px"></i>
 								</button>
-								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+								<p class="s1-txt3 txt-center t_link" data-toggle="modal" data-target="#opera">
 									How To Install
 								</p>
 							</form>
@@ -135,16 +133,16 @@
 						</div> -->
 						<div style="position: fixed;bottom: 0;">    
 							<span class="s1-txt3 txt-center" style="vertical-align: text-bottom;">
-									@ 2017-2019 Schoolvpn.ca | Version: 1.4.0 | By: Mathew Haji
+									@ 2017-2019 Schoolvpn.ca | Version: 1.4.1 | By: Mathew Haji
 							</span>
 						</div>
 					</div>
 					
 				</div>
-				<!-- Modal Login -->
-				<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-hidden="true">
+				<!-- Modal Thanks For Downloading -->
+				<div class="modal fade" id="download" tabindex="-1" role="dialog" aria-hidden="true">
 					<div class="modal-dialog" role="document" data-dismiss="modal">
-						<div class="modal-subscribe where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+						<div class="modal-download where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
 							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
 								<i class="fas fa-times"></i>
 							</button>
@@ -153,30 +151,192 @@
 								<h3 class="m1-txt1 txt-center p-b-36">
 									<span class="bor1 p-b-6" style="color: black;">Thanks For Downloading!</span>
 								</h3>
-		
-								<!-- <p class="m1-txt2 txt-center p-b-40">
-									Follow me for updates!!
-								</p>
-								
-								<div class="flex-w m-t-9 m-b-9 txt-center">
-									<a href="https://github.com/schoolvpn" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
-										<i class="fab fa-github"></i>
-									</a>
-					
-									<a href="https://www.paypal.me/skyzoneservers" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
-										<i class="fab fa-paypal"></i>
-									</a>
-					
-									<a href="https://www.instagram.com/mathew_haji" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</div> -->
 								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
 									🔒
 								</p>
 							</div>
 						</div>
+					</div>
+				</div>
+				<!-- Modal IOS / MAC How To Install -->
+				<div class="modal fade" id="ios" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-ios where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
 		
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">How To Install IOS / MAC</span>
+								</h3>
+								<h4 class="m1-txt1 txt-center">Note: Mac Instructions are at the bottom.</h4>
+								<br>
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">IOS</span>
+								</h3>
+								<h4 class="m1-txt1">1. Click the download button. Then click the allow button.</h4>
+								<img src="images/ios/StepOne.jpeg" width="400">
+								<h4 class="m1-txt1">2. Click the Install button.</h4>
+								<img src="images/ios/StepTwo.png" width="400">
+								<h4 class="m1-txt1">3. Click the Install button again.</h4>
+								<img src="images/ios/StepThree.png" width="400">
+								<h4 class="m1-txt1">4. Enter your phone passcode.</h4>
+								<img src="images/ios/StepFour.jpeg" width="400">
+								<h4 class="m1-txt1">5. Click the Install button.</h4>
+								<img src="images/ios/StepFive.png" width="400">
+								<h4 class="m1-txt1">6. Click the Done button.</h4>
+								<img src="images/ios/StepSix.png" width="400">
+								<h4 class="m1-txt1">7. Go back to Settings.</h4>
+								<img src="images/ios/StepSeven.png" width="400">
+								<h4 class="m1-txt1">8. Click the Back button.</h4>
+								<img src="images/ios/StepEight.png" width="400">
+								<h4 class="m1-txt1">9. Click the Settings button.</h4>
+								<img src="images/ios/StepNine.png" width="400">
+								<h4 class="m1-txt1">10. Click The VPN menu.</h4>
+								<img src="images/ios/StepTen.png" width="400">
+								<h4 class="m1-txt1">11. Chose SchoolVPN. Then click Status slider.</h4>
+								<img src="images/ios/StepEleven.png" width="400">
+								<h4 class="m1-txt1">12. If you See the VPN logo in the top left you are connected. Enjoy!</h4>
+								<img src="images/ios/StepTwelve.png" width="400">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">Mac</span>
+								</h3>
+								<h4 class="m1-txt1">1. Click the download button.</h4>
+								<img src="images/mac/StepOne.png" width="400">
+								<h4 class="m1-txt1">2. Click file that was downloaded.</h4>
+								<img src="images/mac/StepTwo.png" width="400">
+								<h4 class="m1-txt1">3. Click Continue.</h4>
+								<img src="images/mac/StepThree.png" width="400">
+								<h4 class="m1-txt1">4. There is no Username/Password, continue by pressing the Install button.</h4>
+								<img src="images/mac/StepFour.png" width="400">
+								<h4 class="m1-txt1">5. Enter your mac password. Then click OK.</h4>
+								<img src="images/mac/StepFive.png" width="400">
+								<h4 class="m1-txt1">6. Click the nine squares at the top left.</h4>
+								<img src="images/mac/StepSix.png" width="400">
+								<h4 class="m1-txt1">7. Click Network.</h4>
+								<img src="images/mac/StepSeven.png" width="400">
+								<h4 class="m1-txt1">8. Chose SchoolVPN. Then click the connect button.</h4>
+								<img src="images/mac/StepEight.png" width="400">
+								<h4 class="m1-txt1">9. Click the disconnect button to disconnect from SchoolVPN. ENJOY!</h4>
+								<img src="images/mac/StepNine.png" width="400">
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Windows How To Install -->
+				<div class="modal fade" id="windows" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-windows where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
+		
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">Coming Soon!</span>
+								</h3>
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Android How To Install -->
+				<div class="modal fade" id="android" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-android where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">How To Install Android</span>
+								</h3>
+								<h4 class="m1-txt1">1. Click the download button. Then click the OPEN button.</h4>
+								<img src="images/android/StepOne.jpg" width="400">
+								<h4 class="m1-txt1">2. Click the Settings button.</h4>
+								<img src="images/android/StepTwo.jpg" width="400">
+								<h4 class="m1-txt1">3. Turn On "Allow from this source". Then click the back button.</h4>
+								<img src="images/android/StepThree.jpg" width="400">
+								<h4 class="m1-txt1">4. Click the Install button.</h4>
+								<img src="images/android/StepFour.jpg" width="400">
+								<h4 class="m1-txt1">5. Click the Install Anyways button.</h4>
+								<img src="images/android/StepFive.jpg" width="400">
+								<h4 class="m1-txt1">6. Wait for it to finish Installing. Then click Open the button.</h4>
+								<img src="images/android/StepSix.jpg" width="400">
+								<h4 class="m1-txt1">7. Click the connect button.</h4>
+								<img src="images/android/StepSeven.jpg" width="400">
+								<h4 class="m1-txt1">8. Click OK.</h4>
+								<img src="images/android/StepEight.jpg" width="400">
+								<h4 class="m1-txt1">9. If you see the cloud or lock in your notifications you are connected! Enjoy!</h4>
+								<img src="images/android/StepNine.jpg" width="400">
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Chrome How To Install -->
+				<div class="modal fade" id="chrome" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-chrome where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
+		
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">Coming Soon!</span>
+								</h3>
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal FireFox How To Install -->
+				<div class="modal fade" id="firefox" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-firefox where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
+		
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">Coming Soon!</span>
+								</h3>
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Opera How To Install -->
+				<div class="modal fade" id="opera" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-opera where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
+		
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">Coming Soon!</span>
+								</h3>
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<script src="vendor/jquery/jquery-3.2.1.min.js"></script>

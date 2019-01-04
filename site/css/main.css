@@ -24,7 +24,7 @@
 }
 
 .t_link {
-  color: white;
+  color: white !important;
   text-decoration: underline
 }
 
@@ -370,7 +370,7 @@ input.input100 {
 .s1-txt3b {
   font-family: Montserrat-Regular;
   font-size: 12px;
-  color: black;
+  color: #E73C7E;
   line-height: 1.4;
 }
 
