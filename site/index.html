@@ -18,166 +18,202 @@
 		<link rel="stylesheet" type="text/css" href="css/util.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
+		<link rel="stylesheet" href="vendor/canvi/canvi.js">
+		
 	</head>
 	<body>
-		<noscript><img src='http://analytics.schoolvpn.ca/pixel.png?app_key=1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0&begin_session=1'/></noscript>
-		<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
-			<span>
-			</span>
-			<div class="flex-col-c p-t-50 p-b-50">
-				<h3 id="maintitle" class="l1-txt1 txt-center p-b-10"></h3>
-				<br>
-				<p class="txt-center l1-txt2 p-b-60">
-					Get Internet <a class="t_link" href="https://www.eff.org/pages/say-no-to-online-censorship">Freedom</a> At School Today! 
-					<br>
-					Click the download button down below. 
-				</p>
-				<div data-target="#subscribe">
-					<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Darwin_Latest.mobileconfig" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							IOS & MAC
-							<i class="fab fa-apple" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-					<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Client_Latest.exe" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							Windows
-							<i class="fab fa-windows" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-					<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Android_Latest.apk" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Version 1.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							Android
-							<i class="fab fa-android" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-				</div>
-				<div>
-					<form method="get" action="https://chrome.google.com/webstore/detail/schoolvpn-extension/kjomegdlibofnncipfmbobbljmagfnon" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Version 1.0.1</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							Chrome
-							<i class="fab fa-chrome" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-					<form method="get" action="" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							Firefox
-							<i class="fab fa-firefox" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-					<form method="get" action="" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							Opera
-							<i class="fab fa-opera" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-				</div>
-				<div>
-					<form method="get" action="https://status.schoolvpn.ca/" style="display:inline-block;">
-						<button data-tippy="<p class='s1-txt3b'>Status</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
-							Status
-							<i class="fas fa-chart-line" style="font-size: 29px"></i>
-						</button>
-						<p class="s1-txt3 txt-center">
-							.
-						</p>
-					</form>
-				</div>
-			</div>
-			<span class="s1-txt3 txt-center">
-				@ 2017-2018 Schoolvpn.ca | Version: 1.3.5 | By: Mathew Haji
-			</span>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+			<a class="navitem" href="https://status.schoolvpn.ca/">
+				<i class="fas fa-signal" style="padding: 5px"></i>
+				Status
+			</a>
+			<a class="navitem" href="https://github.com/schoolvpn/">
+				<i class="fab fa-github" style="padding: 5px"></i>
+				Github
+			</a>
+			<a class="navitem" href="https://www.instagram.com/mathew_haji/"> 
+				<i class="fab fa-instagram" style="padding: 5px"></i>
+				Instagram
+			</a>
+			<a class="navitem" href="https://www.paypal.me/skyzoneservers">
+				<i class="fab fa-paypal" style="padding: 5px"></i>
+				Donations
+			</a>
+			<a class="navitem" href="https://analytics.schoolvpn.ca/login">
+				<i class="fas fa-chart-area"></i>
+				Analytics
+			</a>  
+			<a class="navitem" href="#">
+				<i class="fas fa-toolbox"></i>
+				Admin
+			</a>
 		</div>
-		<!-- Modal Login -->
-		<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog" role="document" data-dismiss="modal">
-				<div class="modal-subscribe where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
-					<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
-						<i class="fas fa-times"></i>
-					</button>
-
-					<div class="wsize1 m-lr-auto">
-						<h3 class="m1-txt1 txt-center p-b-36">
-							<span class="bor1 p-b-6" style="color: black;">Thanks For Downloading!</span>
-						</h3>
-
-						<p class="m1-txt2 txt-center p-b-40">
-							Follow me for updates!!
+			<!-- Use any element to open the sidenav -->
+			<i class="fas fa-bars ham" onclick="openNav()"></i>
+			<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+			<div id="main" onclick="closeNav()">
+				<noscript><img src='http://analytics.schoolvpn.ca/pixel.png?app_key=1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0&begin_session=1'/></noscript>
+				<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
+					<!-- <div> -->
+					<span>
+					</span>
+					
+					<div class="flex-col-c p-t-50 p-b-50">
+						<h3 id="maintitle" class="l1-txt1 txt-center p-b-10"></h3>
+						<br>
+						<p class="txt-center l1-txt2 p-b-60">
+							Get Internet <a class="t_link" href="https://www.eff.org/pages/say-no-to-online-censorship">Freedom</a> At School Today! 
+							<br>
+							Click the download button down below. 
 						</p>
-						
-						<div class="flex-w m-t-9 m-b-9 txt-center">
-							<a href="https://github.com/schoolvpn" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
-								<i class="fab fa-github"></i>
-							</a>
-			
-							<a href="https://www.paypal.me/skyzoneservers" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
-								<i class="fab fa-paypal"></i>
-							</a>
-			
-							<a href="https://www.instagram.com/mathew_haji" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
-								<i class="fab fa-instagram"></i>
-							</a>
+						<div data-target="#subscribe">
+							<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Darwin_Latest.mobileconfig" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									IOS & MAC
+									<i class="fab fa-apple" style="font-size: 29px; padding: 5px"></i>
+								</button>
+								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+									How To Install
+								</p>
+							</form>
+							<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Client_Latest.exe" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Version 3.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									Windows
+									<i class="fab fa-windows" style="font-size: 29px; padding: 5px"></i>
+								</button>
+								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+									How To Install
+								</p>
+							</form>
+							<form method="get" action="https://s3.ca-central-1.amazonaws.com/schoolvpn.ca/SchoolVPN/SchoolVPN-Android_Latest.apk" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Version 1.0.0</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									Android
+									<i class="fab fa-android" style="font-size: 29px; padding: 5px"></i>
+								</button>
+								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+									How To Install
+								</p>
+							</form>
 						</div>
-						<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
-							🔒
-						</p>
+						<div>
+							<form method="get" action="https://chrome.google.com/webstore/detail/schoolvpn-extension/kjomegdlibofnncipfmbobbljmagfnon" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Version 1.0.1</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									Chrome
+									<i class="fab fa-chrome" style="font-size: 29px; padding: 5px"></i>
+								</button>
+								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+									How To Install
+								</p>
+							</form>
+							<form method="get" action="" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									Firefox
+									<i class="fab fa-firefox" style="font-size: 29px; padding: 5px"></i>
+								</button>
+								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+									How To Install
+								</p>
+							</form>
+							<form method="get" action="" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Coming Soon</p>" class="flex-c-m s1-txt2 size3 how-btn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									Opera
+									<i class="fab fa-opera" style="font-size: 29px; padding: 5px"></i>
+								</button>
+								<p class="s1-txt3 txt-center" style="text-decoration: underline">
+									How To Install
+								</p>
+							</form>
+						</div>
+						<!-- <div>
+							<form method="get" action="https://status.schoolvpn.ca/" style="display:inline-block;">
+								<button data-tippy="<p class='s1-txt3b'>Status</p>" class="flex-c-m s1-txt2 size3b how-btnn" data-toggle="modal" data-target="#subscribe" type="submit"> 
+									Status
+									<i class="fas fa-chart-line" style="font-size: 29px"></i>
+								</button>
+							</form>
+						</div> -->
+						<div style="position: fixed;bottom: 0;">    
+							<span class="s1-txt3 txt-center" style="vertical-align: text-bottom;">
+									@ 2017-2019 Schoolvpn.ca | Version: 1.4.0 | By: Mathew Haji
+							</span>
+						</div>
+					</div>
+					
+				</div>
+				<!-- Modal Login -->
+				<div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document" data-dismiss="modal">
+						<div class="modal-subscribe where1-parent bg0 bor2 size4 p-t-54 p-b-100 p-l-15 p-r-15">
+							<button class="btn-close-modal how-btn2 fs-26 where1 trans-04">
+								<i class="fas fa-times"></i>
+							</button>
+		
+							<div class="wsize1 m-lr-auto">
+								<h3 class="m1-txt1 txt-center p-b-36">
+									<span class="bor1 p-b-6" style="color: black;">Thanks For Downloading!</span>
+								</h3>
+		
+								<!-- <p class="m1-txt2 txt-center p-b-40">
+									Follow me for updates!!
+								</p>
+								
+								<div class="flex-w m-t-9 m-b-9 txt-center">
+									<a href="https://github.com/schoolvpn" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
+										<i class="fab fa-github"></i>
+									</a>
+					
+									<a href="https://www.paypal.me/skyzoneservers" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
+										<i class="fab fa-paypal"></i>
+									</a>
+					
+									<a href="https://www.instagram.com/mathew_haji" class="flex-c-m how-social trans-04 m-r-30" style="width: 30%;">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</div> -->
+								<p class="s1-txt txt-center wsize2 m-lr-auto p-t-20">
+									🔒
+								</p>
+							</div>
+						</div>
+		
 					</div>
 				</div>
-
-			</div>
+				<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/typeit@5.9.0/dist/typeit.min.js"></script>
+				<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+				<script src="js/main.js"></script>
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+				<script type='text/javascript'>
+					//some default pre init
+					var Countly = Countly || {};
+					Countly.q = Countly.q || [];
+					
+					//provide countly initialization parameters
+					Countly.app_key = '1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0';
+					Countly.url = 'https://analytics.schoolvpn.ca';
+					
+					Countly.q.push(['track_sessions']);
+					Countly.q.push(['track_pageview']);
+					Countly.q.push(['track_clicks']);
+					Countly.q.push(['track_scrolls']);
+					Countly.q.push(['track_errors']);
+					Countly.q.push(['track_links']);
+					Countly.q.push(['track_forms']);
+					Countly.q.push(['collect_from_forms']);
+					
+					//load countly script asynchronously
+					(function() {
+						var cly = document.createElement('script'); cly.type = 'text/javascript';
+						cly.async = true;
+						//enter url of script here
+						cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.8.2/countly.min.js';
+						cly.onload = function(){Countly.init()};
+						var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+					})();
+					</script>
 		</div>
-		<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/typeit@5.9.0/dist/typeit.min.js"></script>
-		<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script type='text/javascript'>
-			//some default pre init
-			var Countly = Countly || {};
-			Countly.q = Countly.q || [];
-			
-			//provide countly initialization parameters
-			Countly.app_key = '1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0';
-			Countly.url = 'https://analytics.schoolvpn.ca';
-			
-			Countly.q.push(['track_sessions']);
-			Countly.q.push(['track_pageview']);
-			Countly.q.push(['track_clicks']);
-			Countly.q.push(['track_scrolls']);
-			Countly.q.push(['track_errors']);
-			Countly.q.push(['track_links']);
-			Countly.q.push(['track_forms']);
-			Countly.q.push(['collect_from_forms']);
-			
-			//load countly script asynchronously
-			(function() {
-			   var cly = document.createElement('script'); cly.type = 'text/javascript';
-			   cly.async = true;
-			   //enter url of script here
-			   cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.8.2/countly.min.js';
-			   cly.onload = function(){Countly.init()};
-			   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
-			})();
-			</script>
 	</body>
 </html>
