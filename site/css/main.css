@@ -716,9 +716,12 @@ h6 {
   .p-r-15-xl {padding-right: 15px;}
 
   .w-full-xl {width: 100%;}
-
   /*---------------------------------------------*/
 
+}
+
+@media (max-width: 1024px) {
+  .down-btn {width: 294px}
 }
 
 
