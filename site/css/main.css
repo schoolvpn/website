@@ -721,7 +721,9 @@ h6 {
 }
 
 @media (max-width: 1024px) {
-  .down-btn {width: 294px}
+  .down-btn {width: 294px;}
+  .l1-txt1 {font-size: 39px; border-bottom: 10px}
+  .l1-txt2 {font-size: 25px}
 }
 
 
