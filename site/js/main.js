@@ -93,3 +93,30 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+
+//some default pre init
+var Countly = Countly || {};
+Countly.q = Countly.q || [];
+
+//provide countly initialization parameters
+Countly.app_key = '1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0';
+Countly.url = 'https://analytics.schoolvpn.ca';
+
+Countly.q.push(['track_sessions']);
+Countly.q.push(['track_pageview']);
+Countly.q.push(['track_clicks']);
+Countly.q.push(['track_scrolls']);
+Countly.q.push(['track_errors']);
+Countly.q.push(['track_links']);
+Countly.q.push(['track_forms']);
+Countly.q.push(['collect_from_forms']);
+
+//load countly script asynchronously
+(function() {
+    var cly = document.createElement('script'); cly.type = 'text/javascript';
+    cly.async = true;
+    //enter url of script here
+    cly.src = 'https://cdnjs.cloudflare.com/ajax/libs/countly-sdk-web/18.8.2/countly.min.js';
+    cly.onload = function(){Countly.init()};
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+})();
