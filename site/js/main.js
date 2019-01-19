@@ -99,7 +99,7 @@ var Countly = Countly || {};
 Countly.q = Countly.q || [];
 
 //provide countly initialization parameters
-Countly.app_key = '1cae2c981438fd40df3ce894c5f0e1ea6d89b5b0';
+Countly.app_key = '3eedf44c7706ec54bdfcc112131d79a01f0b3c6a';
 Countly.url = 'https://analytics.schoolvpn.ca';
 
 Countly.q.push(['track_sessions']);
