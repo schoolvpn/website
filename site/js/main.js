@@ -1,4 +1,3 @@
-
 (function ($) {
     "use strict";
     /*==================================================================
@@ -120,3 +119,4 @@ Countly.q.push(['collect_from_forms']);
     cly.onload = function(){Countly.init()};
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
 })();
+

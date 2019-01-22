@@ -1,3 +1,11 @@
+body > .inner {
+  display: none;
+}
+
+body.pg-loaded > .inner {
+  display: block;
+}
+
 .how-social {
   color: black;
   font-size: 70px;
