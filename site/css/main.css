@@ -1,3 +1,7 @@
+#div:not(.loaded) {
+  display:none;
+}
+
 body > .inner {
   display: none;
 }
